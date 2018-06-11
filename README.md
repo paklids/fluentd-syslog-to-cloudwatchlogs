@@ -23,7 +23,7 @@ Everything lands in Cloudwatch Logs in a structured format (JSON).
 ## How do you run this?
 
 Using a docker-compose.yml similar to this:
-
+```
   fluentd:
     build: ./fluentd-config/
     ports:
@@ -36,7 +36,7 @@ Using a docker-compose.yml similar to this:
       AWS_SECRET_ACCESS_KEY: <KEY_SECRET_HERE>
       AWS_REGION: us-west-2
       LocationTag: ArkansasDatacenter
-
+```
 
 
 Edit env variables as needed then run:
