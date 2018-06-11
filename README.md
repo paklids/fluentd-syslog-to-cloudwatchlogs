@@ -2,6 +2,9 @@
 
 ## How does this work?
 
+
+--> SYSLOG --> FLUENTD (+formatting) --> CLOUDWATCH LOGS
+
 Docker container running Fluentd accepts log messages in Syslog format on the TCP port
 specified. Logs are parsed using a grok pattern (for now parsing iptables logs) and 
 sent to Cloudwatch Logs using the API key and secret provided.
