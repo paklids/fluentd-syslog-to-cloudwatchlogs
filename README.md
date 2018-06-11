@@ -40,7 +40,9 @@ Using a docker-compose.yml similar to this:
 
 
 Edit env variables as needed then run:
-`docker-compose -f docker-compose.yml build`
-`docker-compose -f docker-compose.yml up -d`
+
+```docker-compose -f docker-compose.yml build```
+
+```docker-compose -f docker-compose.yml up -d```
 
 
