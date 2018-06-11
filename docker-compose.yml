@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+  fluentd:
+    build: ./fluentd-config/
+    ports:
+      - "5514:5514"
+    volumes:
+      - "./fluentd-config:/fluentd/etc/"
+    environment:
+      TCPport: 5514
+      AWS_ACCESS_KEY_ID: <API_KEY_HERE>
+      AWS_SECRET_ACCESS_KEY: <API_SECRET_HERE>
+      AWS_REGION: us-west-2
+      LocationTag: NV
+

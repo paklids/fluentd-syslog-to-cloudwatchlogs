@@ -27,11 +27,11 @@ Using a docker-compose.yml similar to this:
   fluentd:
     build: ./fluentd-config/
     ports:
-      - "6514:6514"
+      - "5514:5514"
     volumes:
       - "./fluentd-config:/fluentd/etc/"
     environment:
-      TCPport: 6514
+      TCPport: 5514
       AWS_ACCESS_KEY_ID: <KEY_ID_HERE>
       AWS_SECRET_ACCESS_KEY: <KEY_SECRET_HERE>
       AWS_REGION: us-west-2
